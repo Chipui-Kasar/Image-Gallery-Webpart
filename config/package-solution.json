@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "gallery-webpart-client-side-solution",
+    "id": "e893d8fd-c4da-4bf6-b57d-85aa9f6c27b8",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.18.2"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "gallery-webpart description"
+      },
+      "longDescription": {
+        "default": "gallery-webpart description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "gallery-webpart Feature",
+        "description": "The feature that activates elements of the gallery-webpart solution.",
+        "id": "7eef0d57-523c-4440-855b-b1ccc34dd150",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/gallery-webpart.sppkg"
+  }
+}

@@ -1,0 +1,43 @@
+@import "~@fluentui/react/dist/sass/References.scss";
+
+// ImageGallery.scss
+
+// Define SCSS variables for customization
+$gallery-max-width: 1200px;
+$gallery-gap: 16px;
+$image-border-radius: 8px;
+
+.gallery_container {
+  h2 {
+    margin-top: 0px;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    margin: 0 auto;
+    img {
+      width: 100%;
+      aspect-ratio: auto 200 / 200;
+      height: 200px;
+      border-radius: $image-border-radius;
+      cursor: pointer;
+      transition: transform 0.3s ease-in-out;
+      object-fit: cover;
+    }
+  }
+  .error {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+  }
+}
+
+// Responsive Styles
+@media (max-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
